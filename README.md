@@ -5,7 +5,7 @@ Home: http://celeryproject.org
 
 Package license: BSD License
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Distributed Task Queue
 
@@ -69,9 +69,15 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/celery-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/celery-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/celery-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/celery-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/celery-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/celery-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/celery/badges/version.svg)](https://anaconda.org/conda-forge/celery)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/celery/badges/downloads.svg)](https://anaconda.org/conda-forge/celery)
 
 
 Updating celery-feedstock
