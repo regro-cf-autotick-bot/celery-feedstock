@@ -1,14 +1,16 @@
+{% set name = "celery" %}
 {% set version = "3.1.23" %}
+{% set md5 = "c6f10f956a49424d553ab1391ab39ab2" %}
 {% set build = 1 %}
 
 package:
-    name: celery
+    name: {{ name }}
     version: {{ version }}
 
 source:
-    fn: celery-{{ version }}.tar.gz
-    url: https://pypi.python.org/packages/source/c/celery/celery-{{ version }}.tar.gz
-    md5: c6f10f956a49424d553ab1391ab39ab2
+    fn: {{ name }}-{{ version }}.tar.gz
+    url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+    md5: {{ md5 }}
 
 build:
     number: {{ build }}
