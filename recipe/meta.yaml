@@ -1,16 +1,19 @@
+{% set name = "celery" %}
 {% set version = "3.1.23" %}
+{% set md5 = "c6f10f956a49424d553ab1391ab39ab2" %}
+{% set build = 1 %}
 
 package:
-    name: celery
+    name: {{ name }}
     version: {{ version }}
 
 source:
-    fn: celery-{{ version }}.tar.gz
-    url: https://pypi.python.org/packages/source/c/celery/celery-{{ version }}.tar.gz
-    md5: c6f10f956a49424d553ab1391ab39ab2
+    fn: {{ name }}-{{ version }}.tar.gz
+    url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+    md5: {{ md5 }}
 
 build:
-    number: 0
+    number: {{ build }}
     script: python setup.py install --single-version-externally-managed --record=record.txt
     entry_points:
         - celery = celery.__main__:main
@@ -23,13 +26,13 @@ requirements:
         - python
         - setuptools
         - pytz
-        - billiard >=3.3.0.22,<3.4
-        - kombu >=3.0.33,<4.0
+        - billiard >=3.3.0.23,<3.4
+        - kombu >=3.0.34,<4.0
     run:
         - python
         - pytz
-        - billiard >=3.3.0.22,<3.4
-        - kombu >=3.0.33
+        - billiard >=3.3.0.23,<3.4
+        - kombu >=3.0.34,<4.0
         - sqlalchemy
 
 test:
