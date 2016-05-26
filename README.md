@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/celery-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/celery-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/celery-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/celery-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/celery-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/celery-feedstock/branch/master)
