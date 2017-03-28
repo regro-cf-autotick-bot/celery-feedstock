@@ -53,6 +53,12 @@ test:
         - celery.utils
         - celery.utils.dispatch
         - celery.worker
+        
+    commands:
+        - celery --help
+        - celeryd --help
+        - celerybeat --help
+        - celeryd-multi --help
 
 about:
     home: http://celeryproject.org
