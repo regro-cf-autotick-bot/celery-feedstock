@@ -1,16 +1,16 @@
 {% set name = "celery" %}
 {% set version = "3.1.23" %}
-{% set md5 = "c6f10f956a49424d553ab1391ab39ab2" %}
+{% set sha256 = "1a359c815837f9dbf193a7dbc6addafa34612c077ff70c66e3b16e14eebd2418" %}
 {% set build = 1 %}
 
 package:
-    name: {{ name }}
+    name: {{ name|lower }}
     version: {{ version }}
 
 source:
     fn: {{ name }}-{{ version }}.tar.gz
-    url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-    md5: {{ md5 }}
+    url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+    sha256: {{ sha256 }}
 
 build:
     number: {{ build }}
@@ -56,8 +56,11 @@ test:
 
 about:
     home: http://celeryproject.org
-    license: BSD License
+    license_file: LICENSE
+    license: BSD 3-Clause
     summary: Distributed Task Queue
+    dev_url: https://github.com/celery/celery
+    doc_url: http://docs.celeryproject.org/en/latest/index.html
 
 extra:
     recipe-maintainers:
