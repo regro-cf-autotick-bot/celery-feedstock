@@ -1,7 +1,7 @@
 {% set name = "celery" %}
-{% set version = "3.1.23" %}
-{% set sha256 = "1a359c815837f9dbf193a7dbc6addafa34612c077ff70c66e3b16e14eebd2418" %}
-{% set build = 1 %}
+{% set version = "3.1.25" %}
+{% set sha256 = "6ced63033bc663e60c992564954dbb5c84c43899f7f1a04b739957350f6b55f3" %}
+{% set build = 0 %}
 
 package:
     name: {{ name|lower }}
