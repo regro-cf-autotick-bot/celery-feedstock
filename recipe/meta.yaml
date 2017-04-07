@@ -55,10 +55,11 @@ test:
         - celery.worker
         
     commands:
-        - celery --help
-        - celeryd --help
-        - celerybeat --help
-        - celeryd-multi --help
+        - celery --version
+        - celery worker --help
+        - celery beat --help
+        - celery multi --help
+        - celery shell --help
 
 about:
     home: http://celeryproject.org
