@@ -1,16 +1,16 @@
 {% set name = "celery" %}
-{% set version = "3.1.23" %}
-{% set md5 = "c6f10f956a49424d553ab1391ab39ab2" %}
-{% set build = 1 %}
+{% set version = "3.1.25" %}
+{% set sha256 = "6ced63033bc663e60c992564954dbb5c84c43899f7f1a04b739957350f6b55f3" %}
+{% set build = 0 %}
 
 package:
-    name: {{ name }}
+    name: {{ name|lower }}
     version: {{ version }}
 
 source:
     fn: {{ name }}-{{ version }}.tar.gz
-    url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-    md5: {{ md5 }}
+    url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+    sha256: {{ sha256 }}
 
 build:
     number: {{ build }}
@@ -53,12 +53,23 @@ test:
         - celery.utils
         - celery.utils.dispatch
         - celery.worker
+        
+    commands:
+        - celery --version
+        - celery worker --help
+        - celery beat --help
+        - celery multi help
+        - celery shell --help
 
 about:
     home: http://celeryproject.org
-    license: BSD License
+    license_file: LICENSE
+    license: BSD 3-Clause
     summary: Distributed Task Queue
+    dev_url: https://github.com/celery/celery
+    doc_url: http://docs.celeryproject.org/en/latest/index.html
 
 extra:
     recipe-maintainers:
         - kwilcox
+        - pmlandwehr
