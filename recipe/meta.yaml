@@ -58,7 +58,7 @@ test:
         - celery --version
         - celery worker --help
         - celery beat --help
-        - celery multi --help
+        - celery multi help
         - celery shell --help
 
 about:
