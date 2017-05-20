@@ -1,6 +1,6 @@
 {% set name = "celery" %}
-{% set version = "3.1.25" %}
-{% set sha256 = "6ced63033bc663e60c992564954dbb5c84c43899f7f1a04b739957350f6b55f3" %}
+{% set version = "4.0.0" %}
+{% set sha256 = "3e38a9a7f2868f774dffbb49e3afd2e56f57875deb06cb3ee3808f572601a8f0" %}
 {% set build = 0 %}
 
 package:
@@ -17,22 +17,16 @@ build:
     script: python setup.py install --single-version-externally-managed --record=record.txt
     entry_points:
         - celery = celery.__main__:main
-        - celeryd = celery.__main__:_compat_worker
-        - celerybeat = celery.__main__:_compat_beat
-        - celeryd-multi = celery.__main__:_compat_multi
 
 requirements:
     build:
         - python
         - setuptools
-        - pytz
-        - billiard >=3.3.0.23,<3.4
-        - kombu >=3.0.34,<4.0
     run:
         - python
         - pytz
-        - billiard >=3.3.0.23,<3.4
-        - kombu >=3.0.34,<4.0
+        - billiard >=3.5.0.2,<3.6
+        - kombu >=4.0,<5.0
         - sqlalchemy
 
 test:
@@ -53,7 +47,7 @@ test:
         - celery.utils
         - celery.utils.dispatch
         - celery.worker
-        
+
     commands:
         - celery --version
         - celery worker --help
@@ -73,3 +67,4 @@ extra:
     recipe-maintainers:
         - kwilcox
         - pmlandwehr
+        - sodre
