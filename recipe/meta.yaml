@@ -35,7 +35,6 @@ test:
         - pytest >3.0
     source_files:
         - t
-        - requirements
     imports:
         - celery
         - celery.app
@@ -60,7 +59,7 @@ test:
         - celery beat --help
         - celery multi help
         - celery shell --help
-        - pytest  # [py3k]
+        - pytest t/unit  # [py3k]
 
 about:
     home: http://celeryproject.org
