@@ -14,9 +14,8 @@ Summary: Distributed Task Queue
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/celery-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/celery-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/celery-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/celery-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/celery-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/celery-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/celery-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/celery-feedstock)
 
 Current release info
 ====================
