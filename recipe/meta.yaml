@@ -9,24 +9,25 @@ package:
 
 source:
     fn: {{ name }}-{{ version }}.tar.gz
-    url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+    url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
     sha256: {{ sha256 }}
 
 build:
+    noarch: python
     number: {{ build }}
-    script: python setup.py install --single-version-externally-managed --record=record.txt
+    script: python -m pip install --no-deps --ignore-installed .
     entry_points:
         - celery = celery.__main__:main
 
 requirements:
     build:
         - python
-        - setuptools
+        - pip
     run:
         - python
         - pytz
         - billiard >=3.5.0.2,<3.6
-        - kombu >=4.0.2,<5.0
+        - kombu >=4.2.0,<5.0
         - sqlalchemy
 
 test:
