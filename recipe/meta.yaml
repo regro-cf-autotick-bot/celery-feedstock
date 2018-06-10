@@ -1,5 +1,5 @@
 {% set name = "celery" %}
-{% set version = "4.1.0" %}
+{% set version = "4.2.0" %}
 {% set sha256 = "77ff3730198d6a17b3c1f05579ebe570b579efb35f6d7e13dba3b1368d068b35" %}
 {% set build = 0 %}
 
