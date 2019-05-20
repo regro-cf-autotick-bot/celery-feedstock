@@ -6,14 +6,13 @@ package:
     version: {{ version }}
 
 source:
-    fn: {{ name }}-{{ version }}.tar.gz
     url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
     sha256: 4c4532aa683f170f40bd76f928b70bc06ff171a959e06e71bf35f2f9d6031ef9
 
 build:
     noarch: python
     number: 0
-    script: python -m pip install --no-deps --ignore-installed .
+    script: "{{ PYTHON }} -m pip install . --no-deps -vv"
     entry_points:
         - celery = celery.__main__:main
 
@@ -52,7 +51,6 @@ test:
         - celery.utils
         - celery.utils.dispatch
         - celery.worker
-
     commands:
         - celery --version
         - celery worker --help
@@ -64,7 +62,7 @@ test:
 about:
     home: http://celeryproject.org
     license_file: LICENSE
-    license: BSD 3-Clause
+    license: BSD-3-Clause
     summary: Distributed Task Queue
     dev_url: https://github.com/celery/celery
     doc_url: http://docs.celeryproject.org/en/latest/index.html
