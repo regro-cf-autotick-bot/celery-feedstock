@@ -15,9 +15,7 @@ Current build status
 ====================
 
 
-<table><tr>
-    
-    <td>All platforms:</td>
+<table><tr><td>All platforms:</td>
     <td>
       <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3811&branchName=master">
         <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/celery-feedstock?branchName=master">
@@ -118,6 +116,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@edetec](https://github.com/edetec/)
 * [@kwilcox](https://github.com/kwilcox/)
 * [@pmlandwehr](https://github.com/pmlandwehr/)
 * [@sodre](https://github.com/sodre/)
