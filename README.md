@@ -3,7 +3,7 @@ About celery
 
 Home: http://celeryproject.org
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
@@ -116,6 +116,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@edetec](https://github.com/edetec/)
 * [@kwilcox](https://github.com/kwilcox/)
 * [@pmlandwehr](https://github.com/pmlandwehr/)
 * [@sodre](https://github.com/sodre/)
