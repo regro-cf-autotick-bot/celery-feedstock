@@ -23,9 +23,8 @@ requirements:
   run:
     - python
     - pytz
-    - billiard >=3.6.1,<4.0
-    - kombu >=4.6.7,<5.0
-    - vine >=1.3.0
+    - billiard >=3.6.3,<4.0
+    - kombu >=4.6.8,<4.7
     - sqlalchemy
     - cryptography
 
