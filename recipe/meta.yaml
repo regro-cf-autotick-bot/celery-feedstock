@@ -29,6 +29,8 @@ requirements:
     - vine 1.3.0.*
     - sqlalchemy
     - cryptography
+  run_constrained:
+    - sphinx >=2.0
 
 test:
   requires:
