@@ -5,7 +5,7 @@ Home: http://celeryproject.org
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Distributed Task Queue
 
