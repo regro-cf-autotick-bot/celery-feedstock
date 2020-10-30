@@ -42,6 +42,7 @@ test:
     - pytest 6.0.*
     - pytest-celery
     - pytest-timeout 1.4.2.*
+    - pytest-subtests
     - pip
   source_files:
     - t
