@@ -42,6 +42,7 @@ test:
     - pytest 6.0.*
     - pytest-celery
     - pytest-timeout 1.4.2.*
+    - pip
   source_files:
     - t
   imports:
@@ -62,6 +63,7 @@ test:
     - celery.utils.dispatch
     - celery.worker
   commands:
+    - pip check
     - celery --version
     - celery worker --help
     - celery beat --help
