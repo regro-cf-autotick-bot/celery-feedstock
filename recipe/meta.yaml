@@ -69,7 +69,7 @@ test:
     - celery beat --help
     - celery multi help
     - celery shell --help
-    - pytest t/unit      # [py3k]
+    - pytest t/unit
 
 about:
   home: http://celeryproject.org
